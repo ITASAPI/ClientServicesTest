@@ -20,7 +20,9 @@ VERSION: 1.02
 ## Updated Endpoints
 
 <ul>
-    <li>None.</li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Request</b>: Property ValuationPeriod amended to TableExtension due to functionality error,<a href="/#reference/valuation-physical/physical-trade-valuation-request"> Link</a></li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Trading Entity Request</b>: Property ValuationPeriod amended to TableExtension due to functionality error,<a href="/#reference/valuation-physical/physical-trade-valuation-trading-entity-request"> Link</a></li>
+    <li>Valuation-Physical <b>Read Physical Trade Valuation Request Information</b>: Property ValuationPeriod amended to TableExtension due Valuation Request input data change,<a href="/#reference/valuation-physical/physical-trade-valuation-request-information"> Link</a></li>
 </ul>
 <chandiv>** ends ** </div>
 
@@ -407,7 +409,7 @@ Data endpoints for Trade Valuation
 |SingleCcyConVal|Single Currency Contract Value|`boolean`||||
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
-|ValuationPeriod|Valuation Period|`array`||||
+|TableExtension|Table Extension|`string`|9|||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||If set to `true`, this will increase processing time by 300%||
 
@@ -461,7 +463,7 @@ Data endpoints for Trade Valuation
 |SingleCcyConVal|Single Currency Contract Value|`boolean`||||
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
-|ValuationPeriod|Valuation Period|`array`||||
+|TableExtension|Table Extension|`string`|9|||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||If set to `true`, this will increase processing time by 300%||
 
@@ -517,7 +519,7 @@ Data endpoints for Trade Valuation
 |SingleCcyConVal|Single Currency Contract Value|`boolean`||||
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
-|ValuationPeriod|Valuation Period|`array`||||
+|TableExtension|Table Extension|`string`|9|||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||||
 
@@ -1148,7 +1150,7 @@ A multipurpose object used by several endpoints
 + SingleCcyConVal: true (boolean)
 + SingleCcyCosts: false (boolean)
 + RateOfExchangeDate: 20161028 (number)
-+ ValuationPeriod: AUG16,SEP16 (array[string])
++ TableExtension: `_20161032` (string)
 + AppKey: ABC123 (string)
 + IncludeFOPnLAndFOContractValuations: false (boolean)
 
@@ -1171,7 +1173,7 @@ A multipurpose object used by several endpoints
 + SingleCcyConVal: true (boolean)
 + SingleCcyCosts: false (boolean)
 + RateOfExchangeDate: 20161028 (number)
-+ ValuationPeriod: AUG16,SEP16 (array[string])
++ TableExtension: `_20161032` (string)
 + AppKey: ABC123 (string)
 + IncludeFOPnLAndFOContractValuations: false (boolean)
 
