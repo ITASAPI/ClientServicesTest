@@ -20,9 +20,12 @@ VERSION: 1.02
 ## Updated Endpoints
 
 <ul>
-    <li>Valuation-Physical <b>Create Physical Trade Valuation Request</b>: Property ValuationPeriod amended to TableExtension due to functionality error,<a href="/#reference/valuation-physical/physical-trade-valuation-request"> Link</a></li>
-    <li>Valuation-Physical <b>Create Physical Trade Valuation Trading Entity Request</b>: Property ValuationPeriod amended to TableExtension due to functionality error,<a href="/#reference/valuation-physical/physical-trade-valuation-trading-entity-request"> Link</a></li>
-    <li>Valuation-Physical <b>Read Physical Trade Valuation Request Information</b>: Property ValuationPeriod amended to TableExtension due Valuation Request input data change,<a href="/#reference/valuation-physical/physical-trade-valuation-request-information"> Link</a></li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Request</b>: Additional Property TableExtension added to Request,<a href="/#reference/valuation-physical/physical-trade-valuation-request"> Link</a></li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Request</b>: Property ValuationPeriod marked as Obsolete,<a href="/#reference/valuation-physical/physical-trade-valuation-request"> Link</a></li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Trading Entity Request</b>: Additional Property TableExtension added to Request,<a href="/#reference/valuation-physical/physical-trade-valuation-trading-entity-request"> Link</a></li>
+    <li>Valuation-Physical <b>Create Physical Trade Valuation Trading Entity Request</b>: Property ValuationPeriod marked as Obsolete,<a href="/#reference/valuation-physical/physical-trade-valuation-trading-entity-request"> Link</a></li>
+    <li>Valuation-Physical <b>Read Physical Trade Valuation Request Information</b>: Additional Property TableExtension now included in the Read,<a href="/#reference/valuation-physical/physical-trade-valuation-request-information"> Link</a></li>
+    <li>Valuation-Physical <b>Read Physical Trade Valuation Request Information</b>: Property ValuationPeriod marked as Obsolete,<a href="/#reference/valuation-physical/physical-trade-valuation-request-information"> Link</a></li>
 </ul>
 <chandiv>** ends ** </div>
 
@@ -410,6 +413,7 @@ Data endpoints for Trade Valuation
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
 |TableExtension|Table Extension|`string`|9|||
+|ValuationPeriod|Valuation Period|`array`||`Obsolete`||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||If set to `true`, this will increase processing time by 300%||
 
@@ -464,6 +468,7 @@ Data endpoints for Trade Valuation
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
 |TableExtension|Table Extension|`string`|9|||
+|ValuationPeriod|Valuation Period|`array`||`Obsolete`||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||If set to `true`, this will increase processing time by 300%||
 
@@ -520,6 +525,7 @@ Data endpoints for Trade Valuation
 |SingleCcyCosts|Single Currency Costs|`boolean`||||
 |RateOfExchangeDate|Rate of Exchange Date|`number`||||
 |TableExtension|Table Extension|`string`|9|||
+|ValuationPeriod|Valuation Period|`array`||`Obsolete`||
 |AppKey|Application Key|`string`||||
 |IncludeFOPnLAndFOContractValuations|Include FO PnL and FO Contract Valuations|`boolean`||||
 
@@ -1151,6 +1157,7 @@ A multipurpose object used by several endpoints
 + SingleCcyCosts: false (boolean)
 + RateOfExchangeDate: 20161028 (number)
 + TableExtension: `_20161032` (string)
++ ValuationPeriod: AUG16,SEP16 (array[string])
 + AppKey: ABC123 (string)
 + IncludeFOPnLAndFOContractValuations: false (boolean)
 
@@ -1174,6 +1181,7 @@ A multipurpose object used by several endpoints
 + SingleCcyCosts: false (boolean)
 + RateOfExchangeDate: 20161028 (number)
 + TableExtension: `_20161032` (string)
++ ValuationPeriod: AUG16,SEP16 (array[string])
 + AppKey: ABC123 (string)
 + IncludeFOPnLAndFOContractValuations: false (boolean)
 
